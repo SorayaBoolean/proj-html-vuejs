@@ -11,6 +11,6 @@ name: 'MyFooter'
 }
 </script>
 
-<style>
+<style scoped lang="scss">
 
 </style>
