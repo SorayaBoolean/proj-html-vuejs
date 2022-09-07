@@ -1,6 +1,7 @@
 <template>
     <div>
-        stai
+        <div class="footer_top"></div>
+        <div class="footer_bottom"></div>
     </div>
   
 </template>
@@ -12,5 +13,10 @@ name: 'MyFooter'
 </script>
 
 <style scoped lang="scss">
+    .footer_top{
+        border-top: 10px solid #6ABF17;
+        height: 400px;
+    }
+    
 
 </style>
