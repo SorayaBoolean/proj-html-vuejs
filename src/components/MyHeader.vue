@@ -5,15 +5,15 @@
         <div class="call_us">
         <p>
           <i class="fa-solid fa-phone"></i>
-           call us for free at 100.100.100
+           Call us for free at 100.100.100
         </p>
       </div>
       <div class="menu_list">
         <ul>
-          <li>fac</li>
-          <li>twi</li>
-          <li>you</li>
-          <li>ins</li>
+          <li><i class="fa-brands fa-facebook-f"></i></li> 
+          <li><i class="fa-brands fa-twitter"></i></li>
+          <li><i class="fa-brands fa-instagram"></i></li>
+          <li><i class="fa-brands fa-youtube"></i></li>
         </ul>
       </div>
       </div> 
@@ -30,11 +30,7 @@
         <div class="navbar">
           <nav>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Home</a></li>
+              <li v-for="(item,index) in menu" :key="index">{{item}}</li> 
               <li><div class="button">Button</div></li>
             </ul>
           </nav>
@@ -52,7 +48,19 @@
 
 <script>
 export default {
-name: 'MyHeader'
+name: 'MyHeader',
+data () {
+      return {
+          menu: [
+            'Home',
+            'Rates',
+            'Testimonials',
+            'FAQ',
+            'Blog',
+            'Contact'
+          ]
+        }
+      }
 }
 </script>
 
@@ -127,6 +135,11 @@ name: 'MyHeader'
 
         }
     }
+  
+  .button{
+    position:absolute;
+    top:75px;
+  }
 
   .top_jumbotron{
     height: 400px;
