@@ -30,7 +30,7 @@
         <div class="navbar">
           <nav>
             <ul>
-              <li v-for="(item,index) in menu" :key="index">{{item}}</li> 
+              <li v-for="(item,index) in menu" :key="index"><a href="#">{{item}}</a></li> 
               <li><div class="button">Button</div></li>
             </ul>
           </nav>
